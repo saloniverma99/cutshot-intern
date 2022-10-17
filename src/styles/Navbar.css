@@ -1,0 +1,154 @@
+.Navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #f1f5f8;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  .Navbar .leftSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+   
+  
+  
+  
+  .navbar .leftSide img {
+    width: 90px;
+    margin-left: 30px;
+    margin-top: 30px;
+
+    
+  }
+  .navbar .rightSide img {
+     border-radius: 100px;
+     margin-left: 100px;
+     padding-top: 100px;
+     padding-left: 100px;
+     
+  }
+  
+  .navbar .rightSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    color: rgb(114, 102, 102);
+    text-decoration: none;
+    margin: 10px;
+  }
+  
+  .navbar .button {
+    background-color: rgb(230, 41, 119);
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+    float:right;
+  }
+  .navbar .button1 {
+    background-color: transparent;
+    border: none;
+    color: rgb(49, 43, 43);
+    cursor: pointer;
+    text-align: right;
+    float:right;
+    color: black;
+
+  }
+  
+  .Navbar .rightSide  {
+    font-size: 40px;
+  }
+  
+  .navbar .leftSide .button{
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  .navbar .leftSide .button1{
+    border: none;
+    color: rgb(109, 101, 101);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding-top: 30px;
+  }
+  .navbar #open {
+    padding-left: 0px;
+  }
+  .navbar #open img {
+    display: none;
+  }
+  
+  .navbar #close img {
+    display: inherit;
+  }
+  
+  .navbar #open .hiddenLinks {
+    display: inherit;
+    margin-left: 30px;
+  }
+  
+  .navbar #close .hiddenLinks {
+    display: none;
+  }
+  
+  .navbar #open a {
+    width: 70px;
+    margin: 5px;
+  }
+  @media only screen and (max-width: 900px) {
+    .navbar .rightSide a {
+      width: 80px;
+    }
+    .Navbar .leftSide {
+      padding-left: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .navbar .rightSide a {
+      display: none;
+    }
+  
+    .navbar .rightSide {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+  
+    .navbar .rightSide button {
+      display: inherit;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .navbar .rightSide button {
+      display: none;
+    }
+  
+    .hiddenLinks {
+      display: none;
+    }
+  }
